@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'principal/css/style.css' %}">
+    <title>Mercalc</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mercalc</h1>
+        <nav>
+            <a href="{% url 'principal:home' %}">Início</a>
+            <a href="#">Compras</a>
+            <a href="{% url 'dashboard:dashboard' %}">Dashboard</a>
+            <a href="#">Minha conta</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bem-vindo ao Mercalc!</h2>
+        <p>Organize suas compras e controle seus gastos.</p>
+
+        <section>
+            <a href="#">Minhas compras</a>
+            <a href="#">Meu dashboard</a>
+            <a href="#">Nova compra</a>
+        </section>
+    </main>
+
+</body>
+</html>
